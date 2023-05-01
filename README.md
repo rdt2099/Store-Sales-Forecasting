@@ -1,50 +1,60 @@
 ![](UTA-DataScience-Logo.png)
 
-# Store Sales Time Series Forecasting
+# Project Title
 
-## Overview
+Store Sales Forecasting
 
-This project is about forecasting sales for a store chain based on their historical sales data. The aim of this project is to develop a time series model to forecast sales for the next few months. The model will be trained on historical data and validated on a holdout test set.
+## Project Description
 
-## Data
+The goal of this project is to forecast the sales of a chain of stores based on historical sales data, macroeconomic variables, and special events. The data includes the historical sales of each store, as well as information about the stores' locations, types, and sizes. Additionally, external data on macroeconomic variables, such as GDP and inflation, is used to predict sales trends. Finally, data on special events, such as holidays and promotions, is also incorporated into the model.
 
-The data for this project was obtained from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly). It consists of historical weekly sales data for 1,155 products across 39 different stores of a retail chain. The data spans from week 1 of 2011 to week 52 of 2013.
+## Data Sources
 
-## Methodology
+The following data sources were used in this project:
 
-We will use the following methodology for this project:
+- `sales_train.csv`: historical sales data for each store and product
+- `test.csv`: testing set used for Kaggle competition evaluation
+- `stores.csv`: information about each store
+- `items.csv`: information about each product
+- `oil.csv`: historical oil prices (not included in this project)
+- `holidays_events.csv`: information about special events
 
-1. Data Cleaning and Preparation
-2. Exploratory Data Analysis (EDA)
-3. Feature Engineering
-4. Model Development
-5. Model Evaluation and Selection
-6. Forecasting and Validation
+## Approach
 
-## Requirements
+1. Data cleaning and exploration
+    - Outliers detection and removal
+    - Missing values imputation
+    - Feature engineering
+2. Time series analysis
+    - Stationarity check and transformation
+    - Autocorrelation and partial autocorrelation analysis
+3. Model selection and tuning
+    - Baseline models (naive, seasonal naive, average)
+    - Classical time series models (ARIMA, SARIMA)
+    - Machine learning models (Random Forest, XGBoost)
+4. Model evaluation and selection
+    - Mean Absolute Percentage Error (MAPE) metric
+    - Backtesting and cross-validation
+    - Ensembling and stacking of models
+5. Production deployment
+    - Re-training on full dataset
+    - Generating forecasts on new data
+    - Automating data pipeline and model updates
 
-The following packages are required to run the code:
+## Tools and Technologies
 
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
-- statsmodels
+- Python
+- Pandas, NumPy, Matplotlib, Seaborn
+- Scikit-learn
+- Statsmodels
+- XGBoost
+- Jupyter Notebook
+- Git, GitHub
 
-## Usage
+## Contributors
 
-To run the code, follow these steps:
+- Revan Thakkar (https://github.com/rdt2099) 
 
-1. Clone the repository
-2. Install the required packages
-3. Open the Jupyter Notebook `store_sales_time_series_forcasting.ipynb`
-4. Run each cell in order
+## License
 
-## Results
-
-The final model was able to achieve a mean absolute percentage error (MAPE) of 5% on the holdout test set, indicating good performance in predicting future sales.
-
-## Conclusion
-
-This project demonstrates the use of time series modeling to forecast future sales for a retail chain. The results show that accurate sales forecasting can be achieved using historical sales data and appropriate modeling techniques. Further research can be done to improve the model's performance and explore additional features for inclusion in the model.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
