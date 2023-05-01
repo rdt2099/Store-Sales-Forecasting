@@ -23,7 +23,7 @@ This project aims to forecast the sales of various stores using time series fore
 Through the analysis, we found that both the ARIMA model and Prophet library are capable of producing reasonably accurate forecasts for the sales of the stores. However, Prophet performed better in this case, producing a lower RMSE, MAPE, and SMAPE. We also found that holidays, promotions, and competition play a significant role in the sales of the stores. Based on the insights gained from the analysis, we can help the stores optimize their sales by implementing better promotional and pricing strategies during holidays and competitions.
 
 ## Contributors
-- Your name(s) here.
+- Revan Thakkar
 
 ## Acknowledgments
 - Data provided by Rossmann Store Sales and Brent Oil Prices datasets from Kaggle.
