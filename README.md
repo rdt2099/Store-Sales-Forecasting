@@ -1,3 +1,5 @@
+![](UTA-DataScience-Logo.png)
+
 # Store Sales Time Series Forecasting
 
 ## Overview
