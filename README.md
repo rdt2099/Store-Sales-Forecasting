@@ -66,7 +66,7 @@ The test set is a set of observations used to evaluate the performance of the mo
 ## Model Evaluation
 
 - **Linear Regression  Results**
-![](Results.png)
+![](Results.jpeg)
 
 
 
